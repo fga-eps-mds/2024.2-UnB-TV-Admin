@@ -55,8 +55,8 @@ jobs:
       - name: Gera arquivos de testes no formato .xml
         run: python3 -m coverage xml -o coverage.xml
 
-      - name: List files in the root directory
-        run: ls -la
+      - name: test
+        run: pwd
 
 
       - name: Executa SonarCloud Scan
