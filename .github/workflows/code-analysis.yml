@@ -55,6 +55,10 @@ jobs:
       - name: Gera arquivos de testes no formato .xml
         run: python3 -m coverage xml -o coverage.xml
 
+      - name: List files in the root directory
+        run: ls -la
+
+
       - name: Executa SonarCloud Scan
         if: ${{ always() }}
         uses: SonarSource/sonarcloud-github-action@master
