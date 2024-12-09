@@ -57,8 +57,8 @@ jobs:
 
       - name: Adding right path to files
         run: |
-          sed -i 's+/home/runner/work/2024.1-UnB-TV-Admin/2024.1-UnB-TV-Admin+/github/workspace+g' ./coverage.xml
-          sed -i 's+/home/runner/work/2024.1-UnB-TV-Admin/2024.1-UnB-TV-Admin+/github/workspace+g' ./junit.xml
+          sed -i 's+/home/runner/work/2024.1-UnB-TV-Admin/2024.2-UnB-TV-Admin+/github/workspace+g' ./coverage.xml
+          sed -i 's+/home/runner/work/2024.1-UnB-TV-Admin/2024.2-UnB-TV-Admin+/github/workspace+g' ./junit.xml
 
 
       - name: Executa SonarCloud Scan
